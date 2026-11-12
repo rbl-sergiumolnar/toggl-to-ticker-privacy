@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toggl to Ticker privacy policy</title>
+  <style>
+    :root { --ink: #1f1b2e; --ink-2: #6b6680; --plum: #2a2140; --yellow: #ffd200; --line: #e6e3ee; --bg: #f6f5f9; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 20px 72px; }
+    header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+    .mark { width: 44px; height: 44px; border-radius: 11px; background: var(--plum); display: grid; place-items: center; flex: none; }
+    h1 { font-size: 26px; line-height: 1.2; margin: 0; }
+    .date { color: var(--ink-2); font-size: 14px; margin: 4px 0 0; }
+    h2 { font-size: 18px; margin: 32px 0 6px; }
+    p, li { max-width: 66ch; }
+    ul { padding-left: 20px; }
+    code { background: #fff; border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; font-size: 14px; }
+    footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink-2); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="mark"><svg viewBox="0 0 128 128" width="28" height="28" aria-hidden="true"><circle cx="64" cy="68" r="44" fill="#FFD200"/><path d="M64 68V40M64 68h22" stroke="#2A2140" stroke-width="14" stroke-linecap="round" fill="none"/></svg></span>
+    <div>
+      <h1>Toggl to Ticker privacy policy</h1>
+      <p class="date">Effective 12 November 2026</p>
+    </div>
+  </header>
+
+  <p>Toggl to Ticker is a Chrome extension for RebelDot people. It copies your Toggl Track time entries into the RebelDot Ticker time sheet, so you can check and save them. This page tells you which data the extension uses and where that data goes.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>The extension has no server. RebelDot and the extension's author receive none of your data.</li>
+    <li>Your data stays in your own Chrome profile.</li>
+    <li>The extension talks only to Toggl Track and to Ticker, with your own token and login.</li>
+  </ul>
+
+  <h2>Data the extension stores</h2>
+  <p>The extension stores these items in your Chrome profile (<code>chrome.storage.local</code>):</p>
+  <ul>
+    <li>Your Toggl API token.</li>
+    <li>Your project mappings (Toggl project → Ticker project), your role in Ticker, and your Work from home setting.</li>
+    <li>The Ticker project and role lists, so the settings page can show them.</li>
+    <li>The progress of a fill while it runs. A fill that you do not finish expires after 24 hours.</li>
+  </ul>
+  <p>These items stay on your computer. Chrome does not sync them to other devices.</p>
+
+  <h2>Data the extension reads</h2>
+  <ul>
+    <li><strong>From Toggl Track</strong> (<code>api.track.toggl.com</code>): your account name, your projects and clients, and your time entries for the days you choose. The extension sends your API token only to Toggl.</li>
+    <li><strong>From Ticker</strong> (<code>tools.rebeldot.com</code>): the time sheet page, with your existing Ticker login, to show the panel, find the rows that are already there, and get the project list and your role.</li>
+  </ul>
+
+  <h2>What the extension writes</h2>
+  <p>The extension types your time entries into the Ticker time sheet form in your browser. It can click "+ New entry" to add a project block. It never clicks "Save Timesheet": you save the time sheet yourself.</p>
+
+  <h2>What the extension does not do</h2>
+  <ul>
+    <li>It does not sell, share, or transfer your data to anyone.</li>
+    <li>It does not use analytics, tracking, or advertising.</li>
+    <li>It does not read other websites or your browsing history.</li>
+    <li>It does not load code from the internet. All code is in the extension package.</li>
+  </ul>
+
+  <h2>Delete your data</h2>
+  <p>Remove the extension in <code>chrome://extensions</code>. Chrome then deletes all data the extension stored. To stop the extension's access to Toggl, you can also reset your API token in Toggl Track under Profile settings.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, this page shows the new version and a new date.</p>
+
+  <footer>Questions: contact the RebelDot person who shared the extension with you, or the internal support channel named in the Chrome Web Store listing.</footer>
+</main>
+</body>
+</html>
